@@ -1,0 +1,102 @@
+.avatar_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  background-color: #000;
+}
+
+.avatar_group {
+  display: flex;
+  align-items: center;
+  padding-right: 0.75rem;
+}
+
+.avatar_item {
+  position: relative;
+  margin-left: -1.25rem;
+}
+
+.avatar_item:first-child {
+  margin-left: 0;
+}
+
+.avatar_image {
+  width: 3rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fafafa;
+  transition: transform 0.4s ease;
+}
+
+.avatar_item:hover .avatar_image {
+  transform: translateX(-0.5rem);
+}
+
+.avatar_tooltip {
+  min-width: 130px;
+  position: absolute;
+  right: 0;
+  top: -4.25rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background: #fafafa;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.4s ease, margin-right 0.4s ease;
+  z-index: 10;
+}
+
+.avatar_item:hover .avatar_tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  margin-right: 0.5rem;
+}
+
+.avatar_name_row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.avatar_name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.avatar_username {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.verified_icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #2196f3;
+  color: #fafafa;
+  font-size: 0.55rem;
+  font-weight: 700;
+}
+
+.tooltip_arrow {
+  position: absolute;
+  right: 1rem;
+  bottom: -7px;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #fafafa;
+  border-right: 1px solid rgba(209, 213, 219, 0.9);
+  border-bottom: 1px solid rgba(209, 213, 219, 0.9);
+  transform: rotate(45deg);
+}

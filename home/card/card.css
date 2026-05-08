@@ -1,0 +1,161 @@
+.card_parallax {
+width: 100%;
+box-sizing: border-box;
+background-attachment: fixed;
+background-size: cover;
+background-position:center;
+display: flex;
+justify-content: center;
+align-items: center;
+scroll-snap-align: start;
+
+/* Ajusta el alto del difuminado */
+--fade-top: 2%;
+--fade-bottom: 3%;
+
+-webkit-mask-image: linear-gradient(
+  to bottom,
+  transparent 0%,
+  #000 var(--fade-top),
+  #000 calc(100% - var(--fade-bottom)),
+  transparent 100%
+);
+
+mask-image: linear-gradient(
+  to bottom,
+  transparent 0%,
+  #000 var(--fade-top),
+  #000 calc(100% - var(--fade-bottom)),
+  transparent 100%
+);
+
+
+}
+
+/* card 2 ***************************************************************** */
+.card_parallax1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:  5px 5px 0px 0px ;
+  background-color: transparent;
+  height: 100%;
+  background-color:rgba(2, 8, 24, 1);
+
+}
+
+.card_content{
+  color: #000;
+  text-align: center;
+  padding: 2rem 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.04);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Contenedor principal */
+.marquee_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 1rem auto;
+  user-select: none;
+  cursor: grab;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.marquee_container::-webkit-scrollbar{
+  display: none;
+}
+
+.marquee_container.is-dragging{
+  cursor: grabbing;
+}
+
+.marquee_container.is-dragging .marquee-inner{
+  animation-play-state: paused;
+}
+.marquee_container:hover .marquee-inner{
+  animation-play-state: paused;
+}
+.marquee-left .marquee-inner {
+  animation: marqueeLeft 15s linear infinite;
+}
+
+.marquee_right .marquee-inner {
+  animation: marqueeRight 15s linear infinite;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Inner */
+.marquee-inner {
+  display: flex;
+  min-width: 200%;
+  will-change: transform;
+}
+
+/* Track */
+.marquee-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Logos */
+.logo-img {
+   width: 180px;
+   height: 270px;
+   object-fit: cover;
+   object-position: center;
+   margin: 0 24px;
+   border-radius: 12px;
+
+   image-rendering: auto;
+   transform: translateZ(0);
+   backface-visibility: hidden;
+}
+
+/* Fade laterales */
+.fade {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+/* Animación */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
