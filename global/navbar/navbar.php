@@ -54,7 +54,7 @@ $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
   <div id="navMenu" class="nav__mobile">
     <a class="nav__mobile-link" href="#">Inicio</a>
     <a class="nav__mobile-link" href="#">Productos</a>
-    <a class="nav__mobile-link" href="#">Portafolio</a>
+    <a class="nav__mobile-link" href="portfolio/index.php">Portafolio</a>
     <a class="nav__mobile-link" href="#">Estilos</a>
 
     <button class="nav__btn nav__btn--line">Contact</button>
