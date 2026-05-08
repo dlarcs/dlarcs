@@ -12,7 +12,7 @@
   <meta name="author" content="D'LARCS">
 
   <link rel="canonical" href="https://www.dlarcs.com/">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="https://www.dlarcs.com/global/navbar/img/logo.negro.png">
 
   <?php
    $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
@@ -32,13 +32,13 @@
   <meta property="og:description" content="Páginas web modernas, claras y funcionales para negocios, marcas y emprendimientos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.dlarcs.com/">
-  <meta property="og:image" content="https://www.dlarcs.com/img/preview.jpg">
+  <meta property="og:image" content="https://www.dlarcs.com/global/navbar/img/logo.negro.png">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="D'LARCS | Diseño y venta de páginas web para negocios">
   <meta name="twitter:description" content="Diseño web moderno, claro y profesional con opciones básicas, intermedias y premium.">
-  <meta name="twitter:image" content="https://www.dlarcs.com/img/preview.jpg">
+  <meta name="twitter:image" content="https://www.dlarcs.com/global/navbar/img/logo.negro.png">
 
   <!-- Schema -->
   <script type="application/ld+json">
