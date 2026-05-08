@@ -1,8 +1,9 @@
 <?php
-$cssTime = filemtime('home/avatar/avatar.css');
-
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+$cssFile = $base . '/home/avatar/avatar.css';
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 ?>
-<link rel="stylesheet" href="home/avatar/avatar.css?v=<?= $cssTime ?>">
+<link rel="stylesheet" href="home/avatar/avatar.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <section class="avatar_section">
   <div class="avatar_group">
 
@@ -48,10 +49,10 @@ $cssTime = filemtime('home/avatar/avatar.css');
       <div class="avatar_tooltip">
         <div>
           <div class="avatar_name_row">
-            <p class="avatar_name">Andres</p>
+            <p class="avatar_name">Alejandra</p>
             <span class="verified_icon">✓</span>
           </div>
-          <span class="avatar_username">Backend</span>
+          <span class="avatar_username">Full Stack</span>
         </div>
         <span class="tooltip_arrow"></span>
       </div>
@@ -67,10 +68,10 @@ $cssTime = filemtime('home/avatar/avatar.css');
       <div class="avatar_tooltip">
         <div>
           <div class="avatar_name_row">
-            <p class="avatar_name">Alejandra</p>
+            <p class="avatar_name">Andres</p>
             <span class="verified_icon">✓</span>
           </div>
-          <span class="avatar_username">Full Stack</span>
+          <span class="avatar_username">Backend</span>
         </div>
         <span class="tooltip_arrow"></span>
       </div>

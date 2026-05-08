@@ -1,10 +1,13 @@
 <?php
-$cssTime = filemtime('home/card/card.css');
-$jsTime = filemtime('home/card/card.js');
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+
+$cssFile = $base . '/home/card/card.css';
+$jsFile  = $base . '/home/card/card.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
 ?>
-<link rel="stylesheet" href="home/card/card.css?v=<?= $cssTime ?>">
-
-
+<link rel="stylesheet" href="home/card/card.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <div class="card_parallax1 card_parallax">
   <div class="card_content">
     <div class="marquee_container marquee-left">
@@ -36,4 +39,4 @@ $jsTime = filemtime('home/card/card.js');
     </div>
   </div>
 </div>
-<script src="home/card/card.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+<script defer src="home/card/card.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

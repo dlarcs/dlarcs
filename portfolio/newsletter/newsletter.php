@@ -1,9 +1,13 @@
 <?php
-$cssTime = filemtime('portfolio/newsletter/newsletter.css');
-$jsTime = filemtime('portfolio/newsletter/newsletter.js');
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
+$cssFile = $base . '/portfolio/newsletter/newsletter.css';
+$jsFile  = $base . '/portfolio/newsletter/newsletter.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
 ?>
-<link rel="stylesheet" href="portfolio/newsletter/newsletter.css?v=<?= $cssTime ?>">
+<link rel="stylesheet" href="../portfolio/newsletter/newsletter.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 
 <section class="newsletter">
   <div class="newsletter1">
@@ -46,4 +50,4 @@ $jsTime = filemtime('portfolio/newsletter/newsletter.js');
 
   </div>
 </section>
-<script src="portfolio/newsletter/newsletter.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+<script defer src="../portfolio/newsletter/newsletter.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

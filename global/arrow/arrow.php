@@ -1,13 +1,17 @@
 <?php
-$cssTime = filemtime('global/arrow/arrow.css');
-$jsTime  = filemtime('global/arrow/arrow.js');
-?>
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-<link rel="stylesheet" href="global/arrow/arrow.css?v=<?= $cssTime ?>">
+$cssFile = $base . '/global/arrow/arrow.css';
+$jsFile  = $base . '/global/arrow/arrow.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
+?>
+<link rel="stylesheet" href="global/arrow/arrow.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 
 <section class="scroll-indicator" aria-label="Más contenido abajo">
   <span class="scroll-indicator__circle">
     <span class="scroll-indicator__arrow"></span>
   </span>
 </section>
-<script src="global/arrow/arrow.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+<script defer src="global/arrow/arrow.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

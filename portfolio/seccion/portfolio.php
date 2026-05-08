@@ -1,14 +1,17 @@
 <?php
-$cssTime = filemtime('../servicios/seccion/servicios.css'); // ejemplo: '../Home/5.Video/video.css'
-$jsTime = filemtime('');   // ejemplo: '../Home/5.Video/video.js'
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+
+$cssFile = $base . '/portfolio/seccion/portfolio.css';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 ?>
-<link rel="stylesheet" href="../portfolio/seccion/portfolio.css?v=<?= $cssTime ?>">
+<link rel="stylesheet" href="../portfolio/seccion/portfolio.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <section class="seccion_portfolio">
 <div class="portfolio">
   <h2>Mi portafolio</h2>
 
   <div class="proyecto">
-    <div class="proyecto-img" style="background-image: url('../../view/portfolio/seccion/img/Lanyard.png');">
+    <div class="proyecto-img" style="background-image: url('../portfolio/seccion/img/Lanyard.png');">
       <!-- Reemplaza 'img1.jpg' por la ruta de tu imagen -->
     </div>
     <div class="proyecto-info">
@@ -19,7 +22,7 @@ $jsTime = filemtime('');   // ejemplo: '../Home/5.Video/video.js'
   </div>
 
   <div class="proyecto">
-    <div class="proyecto-img" style="background-image: url('../../view/portfolio/seccion/img/UllmanSails.png');">
+    <div class="proyecto-img" style="background-image: url('../portfolio/seccion/img/UllmanSails.png');">
     </div>
     <div class="proyecto-info">
       <h3>Ullman Sails</h3>
@@ -29,7 +32,7 @@ $jsTime = filemtime('');   // ejemplo: '../Home/5.Video/video.js'
   </div>
 
   <div class="proyecto">
-    <div class="proyecto-img" style="background-image: url('../../view/portfolio/seccion/img/arbelaez.png');">
+    <div class="proyecto-img" style="background-image: url('../portfolio/seccion/img/arbelaez.png');">
     </div>
     <div class="proyecto-info">
       <h3>Arbelaez</h3>
@@ -39,7 +42,7 @@ $jsTime = filemtime('');   // ejemplo: '../Home/5.Video/video.js'
   </div>
 
   <div class="proyecto">
-    <div class="proyecto-img" style="background-image: url('../../view/portfolio/seccion/img/Gym.png');">
+    <div class="proyecto-img" style="background-image: url('../portfolio/seccion/img/Gym.png');">
     </div>
     <div class="proyecto-info">
       <h3>Gimnasio</h3>
@@ -50,6 +53,3 @@ $jsTime = filemtime('');   // ejemplo: '../Home/5.Video/video.js'
 
 </div>
 </section>
-
-
-<script src="?v=<?= $jsTime ?>" type="text/javascript"></script>

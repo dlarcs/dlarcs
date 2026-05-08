@@ -17,7 +17,7 @@ $cssFile = $base . '/portfolio/style.css';
 $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 ?>
 
-<link rel="stylesheet" href="/portfolio/style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+<link rel="stylesheet" href="../portfolio/style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 
   <!-- Título de la página -->
   <title>D'LARCS | Diseño web |</title>
@@ -34,12 +34,12 @@ $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 <body class="portfolio_body">
   <div class="whatssap">
   <a href="https://wa.me/573138846378" target="_blank" rel="noopener">
-    <img src="../../home/img_whatsApp.webp" alt="WhatsApp">
+    <img src="../global/img/img_whatsApp.png" alt="WhatsApp">
   </a>
 </div>
- <?php include "../global/navbar/navbar.php" ?>
- <?php include "../portfolio/newsletter/newsletter.php" ?>
- <?php include "../portfolio/seccion/portfolio.php" ?>
- <?php include "../global/footer/footer.php" ?>
+  <?php include "../global/navbar/navbar.php" ?>
+  <?php include "../portfolio/newsletter/newsletter.php" ?>
+  <?php include "../portfolio/seccion/portfolio.php" ?>
+  <?php include "../global/footer/footer.php" ?>
 </body>
 </html>

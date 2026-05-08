@@ -1,9 +1,13 @@
 <?php
-$cssTime = filemtime('global/navbar/navbar.css');
-$jsTime  = filemtime('global/navbar/navbar.js');
-?>
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-<link rel="stylesheet" href="global/navbar/navbar.css?v=<?= $cssTime ?>">
+$cssFile = $base . '/global/navbar/navbar.css';
+$jsFile  = $base . '/global/navbar/navbar.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
+?>
+<link rel="stylesheet" href="global/navbar/navbar.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <nav class="nav">
   <a href="https://dlarcs.com" class="nav__logo">
       <img class="img_logo"src="global/navbar/img/logo_blanco.png" alt="">
@@ -57,4 +61,4 @@ $jsTime  = filemtime('global/navbar/navbar.js');
     <!-- <button class="nav__btn nav__btn-fill">Get Started</button> -->
   </div>
 </nav>
-<script src="global/navbar/navbar.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+<script defer src="global/navbar/navbar.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

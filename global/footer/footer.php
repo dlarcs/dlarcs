@@ -1,9 +1,13 @@
 <?php
-$cssTime = filemtime('global/footer/footer.css');
-$jsTime  = filemtime('global/footer/footer.js');
-?>
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-<link rel="stylesheet" href="global/footer/footer.css?v=<?= $cssTime ?>">
+$cssFile = $base . '/global/footer/footer.css';
+$jsFile  = $base . '/global/footer/footer.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
+?>
+<link rel="stylesheet" href="global/footer/footer.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <div class="footer_bg">
   <footer class="footer">
 
@@ -34,4 +38,4 @@ $jsTime  = filemtime('global/footer/footer.js');
 
   </footer>
   </div>
-<script src="global/footer/footer.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+  <script defer src="global/footer/footer.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

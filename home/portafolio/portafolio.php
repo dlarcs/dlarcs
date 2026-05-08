@@ -1,9 +1,13 @@
 <?php
-$cssTime = filemtime('home/portafolio/portafolio.css');
-$jsTime = filemtime('home/portafolio/portafolio.js');
-?>
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-<link rel="stylesheet" href="home/portafolio/portafolio.css?v=<?= $cssTime ?>">
+$cssFile = $base . '/home/portafolio/portafolio.css';
+$jsFile  = $base . '/home/portafolio/portafolio.js';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
+$jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
+?>
+<link rel="stylesheet" href="home/portafolio/portafolio.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 
 <section class="portfolio">
   <div class="portfolio__inner">
@@ -69,4 +73,4 @@ $jsTime = filemtime('home/portafolio/portafolio.js');
   <div id="pricingCards" class="pricing__cards"></div>
 </section>
 
-<script src="home/portafolio/portafolio.js?v=<?= $jsTime ?>" type="text/javascript"></script>
+<script defer src="home/portafolio/portafolio.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>

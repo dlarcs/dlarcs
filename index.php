@@ -77,7 +77,7 @@
       rel="noopener"
       aria-label="Chatear por WhatsApp"
     >
-      <img src="home/img/img_whatsApp.png" alt="Contactar por WhatsApp" decoding="async">
+      <img src="global/img/img_whatsApp.png" alt="Contactar por WhatsApp" decoding="async">
     </a>
   </main>
 
