@@ -12,7 +12,7 @@
   <meta name="author" content="D'LARCS">
 
   <link rel="canonical" href="https://www.dlarcs.com/">
-  <link rel="icon" href="https://www.dlarcs.com/global/navbar/img/logo.negro.png">
+  <link rel="icon" href="global/navbar/img/logo.negro.png">
 
   <?php
    $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
