@@ -36,8 +36,9 @@ $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
   <a href="https://wa.me/573138846378" target="_blank" rel="noopener">
     <img src="../global/img/img_whatsApp.png" alt="WhatsApp">
   </a>
-</div>
   <?php include "../global/navbar/navbar.php" ?>
+
+</div>
   <?php include "../portfolio/newsletter/newsletter.php" ?>
   <?php include "../portfolio/seccion/portfolio.php" ?>
   <?php include "../global/footer/footer.php" ?>
