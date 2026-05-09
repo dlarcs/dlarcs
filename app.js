@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   preloader.classList.remove("fade-out");
 
-  "D'LARCS LO MEJOR EN DISEÑO".split("").forEach((c, i) => {
+  "D'LARCS DISEÑO WEB".split("").forEach((c, i) => {
     const span = document.createElement("span");
 
     span.textContent = c === " " ? "\u00A0" : c;

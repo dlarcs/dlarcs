@@ -1,22 +1,22 @@
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 
-if (navToggle && navMenu) {
-  navToggle.addEventListener("click", (event) => {
-    event.stopPropagation();
+navToggle.addEventListener("click", (event) => {
+  event.stopPropagation();
 
-    const isOpen = navMenu.classList.toggle("is-open");
-    navToggle.classList.toggle("is-open", isOpen);
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
+  navMenu.classList.toggle("is-open");
+  navToggle.classList.toggle("is-open");
 
-  document.addEventListener("click", () => {
-    navMenu.classList.remove("is-open");
-    navToggle.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
+  const isOpen = navMenu.classList.contains("is-open");
+  navToggle.setAttribute("aria-expanded", isOpen);
+});
 
-  navMenu.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
-}
+navMenu.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+document.addEventListener("click", () => {
+  navMenu.classList.remove("is-open");
+  navToggle.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded", "false");
+});
