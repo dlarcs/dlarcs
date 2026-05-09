@@ -7,7 +7,7 @@ $jsFile  = $base . '/global/navbar/navbar.js';
 $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
 ?>
-<link rel="stylesheet" href="global/navbar/navbar.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+<link rel="stylesheet" href="../global/navbar/navbar.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <nav class="nav">
   <a href="https://dlarcs.com" class="nav__logo">
       <img class="img_logo"src="global/navbar/img/logo_blanco.png" alt="">
