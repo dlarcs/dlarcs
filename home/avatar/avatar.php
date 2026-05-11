@@ -14,7 +14,7 @@ $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
             <p class="avatar_name">Silvio</p>
             <span class="verified_icon">✓</span>
           </div>
-          <span class="avatar_username">Administrador</span>
+          <span class="avatar_username">Business</span>
         </div>
         <span class="tooltip_arrow"></span>
       </div>
@@ -33,7 +33,7 @@ $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
             <p class="avatar_name">Lis</p>
             <span class="verified_icon">✓</span>
           </div>
-          <span class="avatar_username">Administradora</span>
+          <span class="avatar_username">Manager</span>
         </div>
         <span class="tooltip_arrow"></span>
       </div>
@@ -90,7 +90,7 @@ $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
             <p class="avatar_name">Laura</p>
             <span class="verified_icon">✓</span>
           </div>
-          <span class="avatar_username">Gestor comercial</span>
+          <span class="avatar_username">CSO</span>
         </div>
         <span class="tooltip_arrow"></span>
       </div>

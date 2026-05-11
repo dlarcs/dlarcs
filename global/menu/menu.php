@@ -1,8 +1,12 @@
 <?php
-$cssTime = filemtime('global/menu/menu.css');
-// $jsTime = filemtime('../../');
+$base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+
+$cssFile = $base . '/dlarcs/global/menu/menu.css';
+
+$cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 ?>
-<link rel="stylesheet" href="global/menu/menu.css?v=<?= $cssTime ?>">
+
+<link rel="stylesheet" href="/dlarcs/global/menu/menu.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <header class="site-header">
   <a class="brand_menu" href="index.php" aria-label="Inicio">
     <!-- LOGO AGREGADO AQUÍ -->
@@ -27,9 +31,9 @@ $cssTime = filemtime('global/menu/menu.css');
 
   <nav id="site-nav" class="nav" aria-label="Navegación principal">
     <ul class="nav-list">
-      <li><a href="../index.php">Inicio</a></li>
-      <li><a href="portfolio/index.php">Portafolio</a></li>
-      <li><a href="../alojamiento/index.php">Proyectos</a></li>
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="portafolio/index.php">Portafolio</a></li>
+      <li><a href="alojamiento/index.php">Proyectos</a></li>
 
     </ul>
   </nav>

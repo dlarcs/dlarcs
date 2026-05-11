@@ -25,7 +25,7 @@
    ?>
 
    <link rel="stylesheet" href="style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
-   <script defer src="app.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
+   <script defer src="../portafolio/app.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="D'LARCS | Diseño y venta de páginas web para negocios">
@@ -53,22 +53,18 @@
 </head>
 
 <body>
-<!--
-  <div class="preloader" id="preloader">
+
+  <!-- <div class="preloader" id="preloader">
     <div class="loader">
     </div>
   </div>
   <script src="soporte.js"></script> -->
 
 
-  <?php include "global/menu/menu.php"; ?>
+  <?php include "../global/menu/menu.php"; ?>
 
   <main class="container_body">
-    <?php include "global/arrow/arrow.php"; ?>
-    <?php include "home/newsletter/newsletter.php"; ?>
-    <?php include "home/card/card.php"; ?>
-    <?php include "home/portafolio/portafolio.php"; ?>
-    <?php include "home/avatar/avatar.php"; ?>
+    <?php include "../"; ?>
 
     <a
       class="whatsapp-fab"
@@ -77,12 +73,11 @@
       rel="noopener"
       aria-label="Chatear por WhatsApp"
     >
-      <img src="global/img/img_whatsApp.png" alt="Contactar por WhatsApp" decoding="async">
+      <img src="../global/img/img_whatsApp.png" alt="Contactar por WhatsApp" decoding="async">
     </a>
   </main>
 
-  <?php include "global/footer/footer.php"; ?>
-  <?php include "portfolio/seccion/seccion.php" ?>
+  <?php include "../global/footer/footer.php"; ?>
 
 </body>
 </html>
