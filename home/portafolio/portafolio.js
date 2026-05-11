@@ -9,12 +9,12 @@ const plans = [
     buttonText: 'Elegir Página Básica',
     pro: false,
     features: [
-      '✓Página web de 3 sección',
-      '✓Diseño responsive para celular y computador',
-      '✓Información básica del negocio',
-      '✓Botón de WhatsApp',
-      '✓Enlace a redes sociales',
-      '✓Optimización básica para Google'
+      '✓ Página web de 3 sección',
+      '✓ Diseño responsive para celular y computador',
+      '✓ Información básica del negocio',
+      '✓ Botón de WhatsApp',
+      '✓ Enlace a redes sociales',
+      '✓ Optimización básica para Google'
     ]
   },
   {
@@ -25,13 +25,13 @@ const plans = [
     buttonText: 'Elegir Página Pro',
     pro: true,
     features: [
-      '✓Todo lo incluido en la Página Básica',
-      '✓Hasta 5 secciones internasy 3 páginas ',
-      '✓Galería de imágenes',
-      '✓Formulario de contacto',
-      '✓Mapa de ubicación',
-      '✓Optimización SEO más completa',
-      '✓Diseño más personalizado'
+      '✓ Todo lo incluido en la Página Básica',
+      '✓ Hasta 5 secciones internasy 3 páginas ',
+      '✓ Galería de imágenes',
+      '✓ Formulario de contacto',
+      '✓ Mapa de ubicación',
+      '✓ Optimización SEO más completa',
+      '✓ Diseño más personalizado'
     ]
   },
   {
@@ -42,13 +42,13 @@ const plans = [
     buttonText: 'Elegir Página Premium',
     pro: false,
     features: [
-      '✓Todo lo incluido en la Página Pro',
-      '✓Diseño premium personalizado',
-      '✓Animaciones suaves',
-      '✓Más secciones para servicios o productos',
-      '✓Integración con WhatsApp y redes sociales',
-      '✓Mejor estructura SEO',
-      '✓Soporte inicial después de la entrega'
+      '✓ Todo lo incluido en la Página Pro',
+      '✓ Diseño premium personalizado',
+      '✓ Animaciones suaves',
+      '✓ Más secciones para servicios o productos',
+      '✓ Integración con WhatsApp y redes sociales',
+      '✓ Mejor estructura SEO',
+      '✓ Soporte inicial después de la entrega'
     ]
   }
 ];
