@@ -1,12 +1,12 @@
 <?php
 $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-$cssFile = $base . '/dlarcs/global/menu/menu.css';
+$cssFile = $base . '/global/menu/menu.css';
 
 $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 ?>
 
-<link rel="stylesheet" href="/dlarcs/global/menu/menu.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+<link rel="stylesheet" href="global/menu/menu.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <header class="site-header">
   <a class="brand_menu" href="index.php" aria-label="Inicio">
     <!-- LOGO AGREGADO AQUÍ -->
