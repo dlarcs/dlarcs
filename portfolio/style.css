@@ -5,15 +5,13 @@
      scroll-behavior: smooth;
    }
 
-   .portfolio_body {
+   .body_portfolio {
      font-family: 'Poppins', sans-serif;
      color: #fafafa;
 
-     background-image: url("../../view/portfolio/seccion/img/fondo3.png");
-     background-position: center;
-     background-size: cover;
-     background-repeat: repeat;
-     background-attachment: fixed;
+
+   }
+   .container_home{
 
    }
    .whatssap {

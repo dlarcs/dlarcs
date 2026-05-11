@@ -53,15 +53,15 @@
 </head>
 
 <body>
-
+<!-- 
   <div class="preloader" id="preloader">
     <div class="loader">
     </div>
   </div>
-  <script src="soporte.js"></script>
+  <script src="soporte.js"></script> -->
 
 
-  <?php include "global/navbar/navbar.php"; ?>
+  <?php include "global/menu/menu.php"; ?>
 
   <main class="container_body">
     <?php include "global/arrow/arrow.php"; ?>
