@@ -1,0 +1,141 @@
+.section_pag_places{
+  position: relative;
+  padding: 3px 0;
+  width: 80%;
+  margin: auto;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+.section_pag_places h1{
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.5vw;
+  text-align: center;
+  color: white;
+  -webkit-background-clip: text;
+  padding: 2vw;
+  text-transform: uppercase;
+}
+.categories_pag_places{
+  position: relative;
+  margin: 20px  0 30px 0;
+  padding: 10px;
+}
+.categories_pag_places ul{
+  position: relative;
+  list-style: none;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.categories_pag_places ul li{
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+}
+.img_galery_pag_places{
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.galery_card_pag_places{
+  position: relative;
+  flex: .1 1 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  }
+.galery_card_pag_places img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  transition: transform 0.6s ease-in-out;
+}
+.Blogs, .Portafolios, .PaginasWeb{
+  position: relative;
+  height: auto;
+  object-fit: fill;
+  transition: transform 0.4s ease-in-out;
+}
+.galery_card_pag_places .overlay_pag_places{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  background: rgba(100, 100, 100, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Compatibilidad con Safari */
+}
+.card_info_pag_places{
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: none;
+  transition: all .6s ease-in-out;
+}
+
+.card_info_pag_places p{
+  position: relative;
+  color: yellow;
+
+
+  font-size: x-large;
+  text-align: center;
+}
+.galery_card_pag_places:hover .card_info_pag_places{
+  opacity: 1;
+  top:40%;
+  pointer-events: unset;
+}
+.galery_card_pag_places:hover .overlay_pag_places{
+  animation: fadeOpacity 20s ease forwards;
+}
+@keyframes fadeOpacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+ .active{
+  border-bottom: 1px solid yellow;
+}
+.galery_card_pag_places.hide{
+  display: none;
+}
+.galery_card_pag_places.show{
+  animation: fadeIn 5s ease;
+}
+@@keyframes fadeIn {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}

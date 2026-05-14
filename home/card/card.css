@@ -1,16 +1,18 @@
 .card_parallax {
-width: 100%;
-box-sizing: border-box;
-background-attachment: fixed;
-background-size: cover;
-background-position:center;
-display: flex;
-justify-content: center;
-align-items: center;
-scroll-snap-align: start;
+  width: 100%;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+
+
 
 /* Ajusta el alto del difuminado */
---fade-top: 2%;
+/* --fade-top: 2%;
 --fade-bottom: 3%;
 
 -webkit-mask-image: linear-gradient(
@@ -27,7 +29,7 @@ mask-image: linear-gradient(
   #000 var(--fade-top),
   #000 calc(100% - var(--fade-bottom)),
   transparent 100%
-);
+); */
 
 
 }
@@ -37,10 +39,11 @@ mask-image: linear-gradient(
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius:  5px 5px 0px 0px ;
+  border-radius: 5px;
+  margin: 5px auto;
   background-color: transparent;
   height: 100%;
-  background-color:rgba(2, 8, 24, 1);
+  background: linear-gradient(180deg, #071227, #071a2b);
 
 }
 
@@ -57,6 +60,7 @@ mask-image: linear-gradient(
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 /* Contenedor principal */

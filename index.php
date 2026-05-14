@@ -17,15 +17,15 @@
   <?php
    $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-   $cssFile = $base . '/style.css';
-   $jsFile  = $base . '/app.js';
+   $cssFile = $base . '/home/app.js';
+   $jsFile  = $base . '/home/style.css';
 
    $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
    $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
    ?>
 
-   <link rel="stylesheet" href="style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
-   <script defer src="app.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
+   <link rel="stylesheet" href="home/style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+   <script defer src="home/app.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="D'LARCS | Diseño y venta de páginas web para negocios">
@@ -61,7 +61,7 @@
   <script src="soporte.js"></script> -->
 
 
-  <?php include "global/menu/menu.php"; ?>
+  <?php include "home/menu/menu.php"; ?>
 
   <main class="container_body">
     <?php include "global/arrow/arrow.php"; ?>
@@ -69,10 +69,11 @@
     <?php include "home/card/card.php"; ?>
     <?php include "home/portafolio/portafolio.php"; ?>
     <?php include "home/avatar/avatar.php"; ?>
+    <?php include "global/arrow/arrow.php" ?>
 
     <a
       class="whatsapp-fab"
-      href="https://wa.me/573138846378?text=Hola%2C%20vengo%20desde%20la%20web%20de%20D%27LARCS"
+      href="https://wa.me/573138846378?text=Hola%2C%20vengo%20desde%20la%20web%20de%20D%27LARCS,%20me%20gustaría%20cotizar%20mi%20página%20web%20"
       target="_blank"
       rel="noopener"
       aria-label="Chatear por WhatsApp"
@@ -81,8 +82,7 @@
     </a>
   </main>
 
-  <?php include "global/footer/footer.php"; ?>
-  <?php include "portfolio/seccion/seccion.php" ?>
+  <?php include "home/footer/footer.php"; ?>
 
 </body>
 </html>

@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .5rem;
-  background-color: #000;
+  padding: 2rem 0;
+  background: linear-gradient(180deg, #071227, #071a2b);
+  margin: 5px auto;
+  border-radius: 5px;
 }
 
 .avatar_group {
@@ -25,7 +27,7 @@
   width: 3rem;
   display: block;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 2px solid #fafafa;
   transition: transform 0.4s ease;
 }

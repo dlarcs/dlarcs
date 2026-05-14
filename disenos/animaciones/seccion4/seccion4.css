@@ -1,0 +1,512 @@
+.animation_boton{
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #071227, #071a2b);
+}
+/* ------------- TITLE ------------- */
+.container-title-port {
+  width: min(900px, 100%);
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.container-title-port h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.container-title-port h1 span {
+  color: #ff8a00;
+}
+
+.container-title-port p {
+  margin: 0 auto;
+  max-width: 750px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+.wrapper{
+  padding: 3rem;
+  max-width: 100%;
+  overflow-x: hidden; /* o auto si querés scroll */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content:space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.button-container:has(.btn2){
+  filter: drop-shadow( 0px 0px 20px #fff3),
+  drop-shadow( 0px 0px 1500px #fff3;)
+  color:#fff3;
+}
+.btn{
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #fffd;
+  border-radius: 6px;
+  letter-spacing: 3px;
+  position: relative;
+}
+/* ---------------Button animado*/
+.btn1{
+  border: 1px solid #48e;
+  overflow: hidden;
+}
+.btn1::before{
+  content:'';
+  background-color: #48e;
+  display: block;
+  height: 240%;
+  width: 140%;
+  position: absolute;
+  z-index: -1;
+  transition: top .6s, left .6s;
+  border-radius: 50%;
+  top: 100%;
+  left: 30%;
+}
+.btn1:hover::before{
+  top:-30px;
+  left:-10px;
+}
+/* ---------------Button neon */
+
+.btn2{
+  border: 1px solid #fff3;
+  color: #fff3;
+}
+.btn2:hover{
+  border-color: #48e;
+  color:  rgb(111, 168, 255);
+  box-shadow: 0px 0px 6px #48e3,0px 0px 16px #48e3 ;
+  text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454)
+  animation: parpadear 3s ease infinite alternate backwards;
+}
+/* ---------------Button animation*/
+
+.btn3{
+  border: 1px solid #fff3;
+  color: #fff3;
+  animation: parpadear 1s ease infinite alternate backwards;
+
+}
+.btn3:hover{
+}
+@keyframes parpadear {
+  0%{
+      color: #fff3;
+      border: 1px solid #fff3;
+      text-shadow: none;
+      text-shadow: none;
+  }
+  25%{
+      border-color: #48e;
+      color:  rgb(111, 168, 255);
+      box-shadow: 0px 0px 6px #48e3,0px 0px 16px #48e3 ;
+      text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454);
+  }
+  30%{
+      color: #fff3;
+      border: 1px solid #fff3;
+      text-shadow: none;
+      text-shadow: none;
+  }
+  35%{
+      color:  rgb(111, 168, 255);
+      text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454);
+  }
+  46%{
+      color: #fff3;
+      border: 1px solid #fff3;
+      text-shadow: none;
+      text-shadow: none;
+  }
+  60%{
+      border-color: #48e;
+      box-shadow: 0px 0px 6px #48e3,0px 0px 16px #48e3 ;
+  }
+  78%{
+      color: #48e;
+      border: 1px solid #fff3;
+      text-shadow: none;
+      text-shadow: none;
+  }
+  100%{
+      color:  rgb(111, 168, 255);
+      text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454);
+  }
+}
+/* --------------boton efecto latido */
+.btn4 {
+  border: 1px solid #ff69b4;
+  color: #ff69b4;
+  animation: beat 1.5s infinite ease-in-out;
+}
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px #ff69b4;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff69b4;
+  }
+}
+/* ---------------Boton azul electrico */
+.btn5 {
+  border: 1px solid #00f0ff66;
+  color: #00f0ff;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: none;
+    box-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    box-shadow: 0 0 10px #00f0ff88, 0 0 30px #00f0ff88;
+  }
+}
+/* --------------Boton pulso */
+.btn6 {
+  border: 1px solid #39ff14;
+  color: #39ff14;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px #39ff14;
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 20px #39ff14;
+  }
+}
+/* ------------Boton con arcoiris desplazamiento */
+
+.btn7 {
+  border: 2px solid yellow;
+  color: white;
+  background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 4s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+/* ------------------Boton rojo vibrante */
+.btn8 {
+  border: 2px solid #ff4040;
+  color: #ff4040;
+  animation: bounce 1.2s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    text-shadow: 0 0 10px #ff4040;
+  }
+}
+/* -----------Desliza horizontal */
+.btn9 {
+  color: #fff;
+  background: #3498db;
+  animation: slide 2s infinite alternate;
+}
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10px); }
+}
+/* -----------Desliza vertical */
+.btn10{
+  color: #fff;
+  background: #1abc9c;
+  animation: slideY 2s infinite alternate;
+}
+@keyframes slideY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+/* -------------Boton rotar */
+.btn11:hover {
+  color: #fff;
+  background: #9b59b6;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* ------------Boton Escalar */
+.btn12 {
+  background: #f39c12;
+  color: #fff;
+  animation: scale 2s infinite alternate;
+}
+@keyframes scale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+/* -----------------Boton parpadear */
+.btn13 {
+  color: #fff;
+  background: #00f0ff66;
+  color: #00f0ff;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+/* -------------Boton desvanecimiento */
+.btn14 {
+  background: #34495e;
+  color: #fff;
+  animation: fade 3s infinite;
+}
+@keyframes fade {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+/* -----------Boton brillo---------  */
+.btn15 {
+  background: #0ff;
+  color: #000;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { box-shadow: none; }
+  to { box-shadow: 0 0 20px #0ff; }
+}
+/* --------------Boton sombra------- */
+.btn16 {
+  background: #8e44ad;
+  color: #fff;
+  animation: textShadow 2s infinite alternate;
+}
+@keyframes textShadow {
+  0% { text-shadow: none; }
+  100% { text-shadow: 2px 2px 5px #f1c40f; }
+}
+/* --------------Boton rebote--------- */
+/* .btn17 {
+  background: #16a085;
+  color: #fff;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+} */
+/* --------------Boton latido----------- */
+.btn18 {
+  background: #e84393;
+  color: #fff;
+  animation: heartbeat 1s infinite ease-in-out;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+/* -------------Rotacion dinamica adelante y atras--------- */
+.btn19 {
+  background: #d35400;
+  color: #fff;
+  animation: swing 2s infinite ease-in-out;
+}
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+/* ---------------Boton color ciclico */
+.btn20 {
+  background: #fff;
+  color: #000;
+  animation: colorCycle 4s infinite;
+}
+@keyframes colorCycle {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: yellow; }
+  75% { color: green; }
+  100% { color: blue; }
+}
+/* ------------Boton fondo arcoiris------ */
+.btn21 {
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  color: white;
+  animation: rainbowBg 6s ease infinite;
+}
+@keyframes rainbowBg {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+/* ----------Boton con entrada de desvanecimiento y desplazamiento---------- */
+/* .btn22 {
+    background: #7f8c8d;
+    color: white;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlideIn 2s ease-out forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+/* --------Boton Zoom In al pasar el cursor */
+.btn23 {
+  background: red;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.btn23:hover {
+  transform: scale(1.2);
+}
+/* --------Boton Zoom Out al pasar el curosr */
+.btn24 {
+  background: #fd79a8;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.btn24:hover {
+  transform: scale(0.9);
+}
+/* ----------Boton Flas intermitente */
+.btn25 {
+  background: #d63031;
+  color: #fff;
+  animation: flash 1.5s linear infinite;
+}
+@keyframes flash {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.3; }
+}
+/* -------------Boton flip hotizontal */
+.btn26 {
+  background: #0984e3;
+  color: white;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.btn26:hover {
+  transform: rotateY(180deg);
+}
+/* ---------Boton tambaleo */
+.btn27 {
+  background: #6c5ce7;
+  color: white;
+  animation: wobble 1s infinite;
+}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-5%) rotate(-5deg); }
+  30% { transform: translateX(3%) rotate(3deg); }
+  45% { transform: translateX(-3%) rotate(-3deg); }
+  60% { transform: translateX(2%) rotate(2deg); }
+  75% { transform: translateX(-1%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+/* -------------Gradiante animado */
+.btn28{
+  background: linear-gradient(270deg, #00f, #0ff, #0f0, #ff0, #f00, #f0f);
+  background-size: 1200% 1200%;
+  color: white;
+  animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* ------------Boton brillo desde la izquierda */
+.btn29 {
+  background: #2d3436;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.btn29::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.6), transparent);
+  animation: shine 2s infinite;
+}
+@keyframes shine {
+  100% { left: 125%; }
+}
+/* -------------Boton borde neon animado */
+.btn30 {
+  background: #000;
+  color: #0ff;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff;
+  animation: neon-border 1.5s infinite alternate;
+}
+@keyframes neon-border {
+  from {
+    box-shadow: 0 0 5px #0ff;
+  }
+  to {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+}
+/* ----------------Boton hover con animacion */
+.btn31 {
+  background: #fab1a0;
+  color: #2d3436;
+  transition: transform 0.3s;
+}
+.btn31:hover {
+  transform: skewX(-15deg);
+}
+
+/* -----------Boton movimiento circular infinito */
+.btn32 {
+  background: #00cec9;
+  color: #fff;
+  animation: circleMove 3s linear infinite;
+}
+@keyframes circleMove {
+  0% { transform: rotate(0deg) translateX(0); }
+  50% { transform: rotate(180deg) translateX(5px); }
+  100% { transform: rotate(360deg) translateX(0); }
+}
+
+@media (max-width: 768px){
+  .container-title-port{
+    width: 100%;
+    padding: 1rem;
+  }
+}

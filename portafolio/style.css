@@ -21,7 +21,8 @@ body {
   overflow-x: hidden;
   font-family: inherit;
   background-color: #f5f7fb;
-  padding: 5px;
+  padding: 2% ;
+  box-sizing: border-box;
 }
 
 img,
@@ -41,7 +42,7 @@ main {
   min-width: 0;
 }
 
-.container_body {
+.container_portafolio {
   width: 100%;
 }
 

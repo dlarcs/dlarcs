@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   preloader.classList.remove("fade-out");
 
-  "Diseños & Secciones".split("").forEach((c, i) => {
+  "Portafolio".split("").forEach((c, i) => {
     const span = document.createElement("span");
 
     span.textContent = c === " " ? "\u00A0" : c;

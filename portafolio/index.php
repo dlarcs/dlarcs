@@ -17,14 +17,14 @@
   <?php
    $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-   $cssFile = $base . '/style.css';
-   $jsFile  = $base . '/app.js';
+   $cssFile = $base . '/portafolio/style.css';
+   $jsFile  = $base . '/portafolio/app.js';
 
    $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
    $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
    ?>
 
-   <link rel="stylesheet" href="style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+   <link rel="stylesheet" href="../portafolio/style.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
    <script defer src="../portafolio/app.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
 
   <!-- Open Graph -->
@@ -54,17 +54,19 @@
 
 <body>
 
-  <!-- <div class="preloader" id="preloader">
+  <div class="preloader" id="preloader">
     <div class="loader">
     </div>
   </div>
-  <script src="soporte.js"></script> -->
+  <script src="soporte.js"></script>
 
 
-  <?php include "../global/menu/menu.php"; ?>
+  <?php include "../portafolio/menu/menu.php"; ?>
 
-  <main class="container_body">
-    <?php include "../"; ?>
+  <main class="container_portafolio">
+    <?php include "../portafolio/slider/slider.php" ?>
+    <?php include "../portafolio/portfolio/portfolio.php" ?>
+    <?php include "../global/arrow/arrow.php"; ?>
 
     <a
       class="whatsapp-fab"
@@ -77,7 +79,7 @@
     </a>
   </main>
 
-  <?php include "../global/footer/footer.php"; ?>
+  <?php include "../portafolio/footer/footer.php"; ?>
 
 </body>
 </html>

@@ -1,0 +1,164 @@
+.animation_text{
+  padding: 1rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #071227, #071a2b);
+}
+
+/* ---------- TITLE ---------- */
+
+/* ------------- TITLE ------------- */
+.container-title-port {
+  width: min(900px, 100%);
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.container-title-port h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.container-title-port h1 span {
+  color: #ff8a00;
+}
+
+.container-title-port p {
+  margin: 0 auto;
+  max-width: 750px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* ---------- GRID ---------- */
+
+.container_diseños{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* ---------- BOX ---------- */
+
+.seccion-diseños{
+  position: relative;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform .4s ease;
+}
+
+.seccion-diseños:hover{
+  transform: translateY(-5px) scale(1.01);
+}
+
+/* ---------- BACKGROUNDS ---------- */
+
+.seccion-diseños:nth-child(1){
+  background: linear-gradient(135deg, #071227, #12355b);
+}
+
+.seccion-diseños:nth-child(2){
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.seccion-diseños:nth-child(3){
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.seccion-diseños:nth-child(4){
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.seccion-diseños:nth-child(5){
+  background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+.seccion-diseños:nth-child(6){
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.seccion-diseños:nth-child(7){
+  background: linear-gradient(135deg, #fc466b, #3f5efb);
+}
+
+.seccion-diseños:nth-child(8){
+  background: linear-gradient(to right, #232526, #414345);
+}
+
+.seccion-diseños:nth-child(9){
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.seccion-diseños:nth-child(10){
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+/* ---------- SVG ---------- */
+
+.loading-page{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-text{
+  width: 100%;
+  height: 100%;
+}
+
+.svg-text text{
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+
+  transition: .4s ease;
+}
+
+.svg-text:hover text{
+  stroke-dasharray: 4500;
+  animation: draw 7s ease;
+}
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes draw{
+  0%{
+    stroke-dashoffset: 4000;
+  }
+
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px){
+
+  .container_diseños{
+    grid-template-columns: 1fr;
+  }
+
+  .seccion-diseños{
+    height: 180px;
+  }
+
+  .svg-text text{
+    font-size: 42px;
+  }
+
+}

@@ -9,7 +9,7 @@ const plans = [
     buttonText: 'Elegir Página Básica',
     pro: false,
     features: [
-      '✓ Página web de 3 sección',
+      '✓ Página web de 5 sección',
       '✓ Diseño responsive para celular y computador',
       '✓ Información básica del negocio',
       '✓ Botón de WhatsApp',
@@ -26,7 +26,7 @@ const plans = [
     pro: true,
     features: [
       '✓ Todo lo incluido en la Página Básica',
-      '✓ Hasta 5 secciones internasy 3 páginas ',
+      '✓ Hasta 4 pagínas internas ',
       '✓ Galería de imágenes',
       '✓ Formulario de contacto',
       '✓ Mapa de ubicación',
