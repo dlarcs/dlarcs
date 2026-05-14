@@ -1,0 +1,78 @@
+
+/*Flecha*/
+.scroll-indicator {
+  position: fixed;
+  left: 50%;
+  bottom: 1.6rem;
+  transform: translateX(-50%);
+  z-index: 50;
+  pointer-events: auto;
+}
+
+/* Círculo */
+.scroll-indicator__circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+
+  animation: scroll-bounce 1.4s ease-in-out infinite;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Flecha hacia abajo (palito + punta) */
+.scroll-indicator__arrow {
+  position: relative;
+  width: 2px;          /* grosor del palito */
+  height: 16px;        /* largo del palito */
+  background: #111827; /* color de la flecha */
+  border-radius: 999px;
+}
+
+/* Punta de la flecha */
+.scroll-indicator__arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* baja un poquito la punta */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #111827; /* color de la punta */
+}
+
+/* Hover */
+.scroll-indicator__circle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación suave */
+@keyframes scroll-bounce {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Ocultar con transición (JS) */
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .scroll-indicator {
+    bottom: 1.1rem;
+  }
+}
