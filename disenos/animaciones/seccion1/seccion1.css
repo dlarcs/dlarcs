@@ -1,0 +1,201 @@
+.seccion1{
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #071227, #071a2b);
+}
+ .seccion_slider{
+  position: relative;
+  padding: 1px;
+
+  display: grid;
+  place-items:center;
+  margin-top: 130px;
+  margin-bottom: 600px;
+  perspective: 1500px;
+  width: 75vw;
+  height: 5px;
+ }
+
+ /* ------------- TITLE ------------- */
+ .container-title-port {
+   width: min(900px, 100%);
+   margin: auto;
+   padding: 2rem;
+   text-align: center;
+   color: white;
+ }
+
+ .container-title-port h1 {
+   margin: 0 0 1rem;
+   font-size: clamp(2.2rem, 5vw, 4.5rem);
+   font-weight: 700;
+   line-height: 1.1;
+ }
+
+ .container-title-port h1 span {
+   color: #ff8a00;
+ }
+
+ .container-title-port p {
+   margin: 0 auto;
+   max-width: 750px;
+   font-size: clamp(1rem, 2vw, 1.2rem);
+   line-height: 1.7;
+   color: rgba(255, 255, 255, 0.78);
+ }
+
+ .section-port .title-port {
+   position: relative;
+   color: #fff;
+   font-weight: 700;
+   font-size: 3em;
+   text-transform: capitalize;
+ }
+ .description-port{
+   letter-spacing: 1px;
+   font-size: 16px;
+   color: green; noooo sirveeee
+   font-weight: 600;
+   text-align: center;
+ }
+ .wrapper {
+   position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container {
+   position: relative;
+    height: 100%;
+    width: 90%;
+    min-width: 300px;
+    margin:auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+
+ .section-port .title-port ::before {
+   position: absolute;
+   content: '';
+   bottom: 0;
+   left: 50%;
+   width: 140px;
+   height: 3px;
+   background-color: rgb(70, 130, 180);
+   transform: translateX(-50%);
+ }
+ .section-package .title-port ::after{
+   position: absolute;
+   content: '';
+   bottom: -1px;
+   left: 50%;
+   width: 45px;
+   height: 6px;
+   background-color: rgb(70, 130, 180);
+   transform: translateX(-50%);
+ }
+ .section-port .description-port{
+   letter-spacing: 1px;
+   font-size: 16px;
+   color: #fff;
+   font-weight: 600;
+   text-align: center;
+   margin: 10px 10px;
+ }
+
+ .card {
+   position: relative;
+    width: 65px;
+    border-radius: 16px;
+
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+ }
+
+ .card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+ }
+
+ .card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+ }
+
+ .card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: ;
+    overflow: hidden;
+    height: 80px;
+    width: 80%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+ }
+
+ .description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+ }
+ .description h4 {
+    text-transform: uppercase;
+ }
+
+ .container input {
+    display: none;
+ }
+
+ input:checked + label {
+    width: 600px;
+ }
+
+ input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+ }
+ /* blogs */
+ .cardImg1{
+    background-image: url('../../../disenos/animaciones/img/arbelaez1.jpg');
+ }
+ .cardImg2 {
+   background-image: url('../../../disenos/animaciones/img/ullman_sails.jpg');
+ }
+ .cardImg3 {
+    background-image: url('../../../disenos/animaciones/img/arbelaez3.jpg');
+ }
+ .cardImg4 {
+   background-image: url('../../../disenos/animaciones/img/lanyards.jpg');
+ }
+ 

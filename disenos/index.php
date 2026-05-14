@@ -58,7 +58,7 @@
     <div class="loader">
     </div>
   </div>
-  <script src="soporte.js"></script>
+  <script src="../soporte.js"></script>
 
 
   <?php include "../disenos/menu/menu.php"; ?>
@@ -69,6 +69,7 @@
     <?php include "../disenos/animaciones/seccion3/seccion3.php" ?>
     <?php include "../disenos/animaciones/seccion4/seccion4.php" ?>
     <?php include "../disenos/animaciones/seccion5/seccion5.php" ?>
+    <?php include "../disenos/animaciones/seccion1/seccion1.php" ?>
 
 
 
