@@ -54,11 +54,11 @@
 
 <body>
 
-  <!-- <div class="preloader" id="preloader">
+  <div class="preloader" id="preloader">
     <div class="loader">
     </div>
   </div>
-  <script src="soporte.js"></script> -->
+  <script src="soporte.js"></script>
 
 
   <?php include "../disenos/menu/menu.php"; ?>
