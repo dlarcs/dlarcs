@@ -1,0 +1,93 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+   }
+
+   .servicios_body {
+     font-family: 'Poppins', sans-serif;
+     color: #ffffff;
+
+     background-image: url("../../view/home/slider/img/fondo2.png");
+     background-position: center;
+     background-size: cover;
+     background-repeat: repeat;
+     background-attachment: fixed;
+
+   }
+   .whatssap {
+     position: relative;
+     padding: 0;
+     margin: 0;
+     border: 0;
+     z-index: 1000;
+   }
+
+   .whatssap a {
+     text-decoration: none;
+   }
+
+   .whatssap img {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 60px;  /* aumentado para que sea más visible */
+     height: 60px;
+
+     background-color: white;
+     padding: 15px;
+
+     border-radius: 36%;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+     animation: pulse 2s infinite; /* 👈 Aquí se activa la animación */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+     z-index: 100;
+   }
+   .whatssap img:hover {
+     transform: scale(1.1);
+     cursor: pointer;
+   }
+   @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+   h1 {
+     font-size: clamp(2rem, 2.5vw, 5rem);
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+   }
+
+   h2 {
+     font-size: clamp(1.75rem, 2vw, 4rem);
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+   }
+
+   h3 {
+     font-size: clamp(1.5rem, 1.8vw, 3rem);
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+   }
+
+   h4 {
+     font-size: clamp(1.25rem, 1.5vw, 2.5rem);
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+   }
+
+   h5 {
+     font-size: clamp(1.125rem, 1.2vw, 2rem);
+     text-shadow: 2px 2px 4px rgba(0,0,0,1);
+   }
+
+   h6 {
+     font-size: clamp(1rem, 1vw, 1.5rem);
+   }
+
+   p, li, a, span, div, button{
+     font-size: clamp(1rem, 1vw, 1.25rem);
+   }

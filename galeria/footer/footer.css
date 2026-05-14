@@ -137,7 +137,8 @@
   font-size: clamp(3rem, 15vw, 15rem);
   font-weight: 800;
   line-height: 0.7;
-  -webkit-text-stroke: 1px #0d542b;
+  -webkit-text-stroke: 2px #fafafa;
+
 
   /* background-color: #0d542b; */
   background-image: url("../../home/img/fondo9.jpg");

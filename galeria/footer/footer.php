@@ -1,13 +1,13 @@
 <?php
 $base = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 
-$cssFile = $base . '/portafolio/footer/footer.css';
-$jsFile  = $base . '/portafolio/footer/footer.js';
+$cssFile = $base . '/galeria/footer/footer.css';
+$jsFile  = $base . '/galeria/footer/footer.js';
 
 $cssVer = is_file($cssFile) ? filemtime($cssFile) : '';
 $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
 ?>
-<link rel="stylesheet" href="../portafolio/footer/footer.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
+<link rel="stylesheet" href="../galeria/footer/footer.css<?= $cssVer ? '?v=' . $cssVer : '' ?>">
 <div class="footer_bg">
   <footer class="footer">
 
@@ -38,4 +38,4 @@ $jsVer  = is_file($jsFile) ? filemtime($jsFile) : '';
 
   </footer>
   </div>
-  <script defer src="../portafolio/footer/footer.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
+  <script defer src="../galeria/footer/footer.js<?= $jsVer ? '?v=' . $jsVer : '' ?>"></script>
