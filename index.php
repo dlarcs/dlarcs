@@ -47,18 +47,18 @@
     "@type": "Organization",
     "name": "D'LARCS",
     "url": "https://www.dlarcs.com/",
-    "logo": "https://www.dlarcs.com/img/logo.png"
+    "logo": "https://www.dlarcs.com/img/logo.negro.png"
   }
   </script>
 </head>
 
 <body>
-<!--
+
   <div class="preloader" id="preloader">
     <div class="loader">
     </div>
   </div>
-  <script src="soporte.js"></script> -->
+  <script src="soporte.js"></script>
 
 
   <?php include "home/menu/menu.php"; ?>

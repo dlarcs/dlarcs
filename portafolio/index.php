@@ -47,7 +47,7 @@
     "@type": "Organization",
     "name": "D'LARCS",
     "url": "https://www.dlarcs.com/",
-    "logo": "https://www.dlarcs.com/img/logo.png"
+    "logo": "https://www.dlarcs.com/img/logo.negro.png"
   }
   </script>
 </head>
