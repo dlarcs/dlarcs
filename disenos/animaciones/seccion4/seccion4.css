@@ -45,14 +45,14 @@
   box-sizing: border-box;
 }
 .button-container:has(.btn2){
-  filter: drop-shadow( 0px 0px 20px #fff3),
-  drop-shadow( 0px 0px 1500px #fff3;)
-  color:#fff3;
+  filter: drop-shadow( 0px 0px 20px #fafafa3),
+  drop-shadow( 0px 0px 1500px #fafafa3;)
+  color:#fafafa;
 }
 .btn{
   padding: 10px 40px;
   background-color: transparent;
-  color: #fffd;
+  color: #fafafad;
   border-radius: 6px;
   letter-spacing: 3px;
   position: relative;
@@ -82,8 +82,8 @@
 /* ---------------Button neon */
 
 .btn2{
-  border: 1px solid #fff3;
-  color: #fff3;
+  border: 1px solid #fafafa;
+  color: #fafafa;
 }
 .btn2:hover{
   border-color: #48e;
@@ -95,8 +95,8 @@
 /* ---------------Button animation*/
 
 .btn3{
-  border: 1px solid #fff3;
-  color: #fff3;
+  border: 1px solid #fafafa3;
+  color: #fafafa3;
   animation: parpadear 1s ease infinite alternate backwards;
 
 }
@@ -104,8 +104,8 @@
 }
 @keyframes parpadear {
   0%{
-      color: #fff3;
-      border: 1px solid #fff3;
+      color: #fafafa3;
+      border: 1px solid #fafafa3;
       text-shadow: none;
       text-shadow: none;
   }
@@ -116,8 +116,8 @@
       text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454);
   }
   30%{
-      color: #fff3;
-      border: 1px solid #fff3;
+      color: #fafafa3;
+      border: 1px solid #fafafa3;
       text-shadow: none;
       text-shadow: none;
   }
@@ -126,8 +126,8 @@
       text-shadow: 0px 0px 9px #48ee,0px 0px 3px rgba(159, 198, 255, .454);
   }
   46%{
-      color: #fff3;
-      border: 1px solid #fff3;
+      color: #fafafa3;
+      border: 1px solid #fafafa3;
       text-shadow: none;
       text-shadow: none;
   }
@@ -137,7 +137,7 @@
   }
   78%{
       color: #48e;
-      border: 1px solid #fff3;
+      border: 1px solid #fafafa3;
       text-shadow: none;
       text-shadow: none;
   }
@@ -230,7 +230,7 @@
 }
 /* -----------Desliza horizontal */
 .btn9 {
-  color: #fff;
+  color: #fafafa;
   background: #3498db;
   animation: slide 2s infinite alternate;
 }
@@ -240,7 +240,7 @@
 }
 /* -----------Desliza vertical */
 .btn10{
-  color: #fff;
+  color: #fafafa;
   background: #1abc9c;
   animation: slideY 2s infinite alternate;
 }
@@ -250,7 +250,7 @@
 }
 /* -------------Boton rotar */
 .btn11:hover {
-  color: #fff;
+  color: #fafafa;
   background: #9b59b6;
   animation: rotate 2s linear infinite;
 }
@@ -261,7 +261,7 @@
 /* ------------Boton Escalar */
 .btn12 {
   background: #f39c12;
-  color: #fff;
+  color: #fafafa;
   animation: scale 2s infinite alternate;
 }
 @keyframes scale {
@@ -270,7 +270,7 @@
 }
 /* -----------------Boton parpadear */
 .btn13 {
-  color: #fff;
+  color: #fafafa;
   background: #00f0ff66;
   color: #00f0ff;
   animation: blink 1s step-start infinite;
@@ -281,7 +281,7 @@
 /* -------------Boton desvanecimiento */
 .btn14 {
   background: #34495e;
-  color: #fff;
+  color: #fafafa;
   animation: fade 3s infinite;
 }
 @keyframes fade {
@@ -301,7 +301,7 @@
 /* --------------Boton sombra------- */
 .btn16 {
   background: #8e44ad;
-  color: #fff;
+  color: #fafafa;
   animation: textShadow 2s infinite alternate;
 }
 @keyframes textShadow {
@@ -311,7 +311,7 @@
 /* --------------Boton rebote--------- */
 /* .btn17 {
   background: #16a085;
-  color: #fff;
+  color: #fafafa;
   animation: bounce 1s infinite;
 }
 @keyframes bounce {
@@ -321,7 +321,7 @@
 /* --------------Boton latido----------- */
 .btn18 {
   background: #e84393;
-  color: #fff;
+  color: #fafafa;
   animation: heartbeat 1s infinite ease-in-out;
 }
 @keyframes heartbeat {
@@ -331,7 +331,7 @@
 /* -------------Rotacion dinamica adelante y atras--------- */
 .btn19 {
   background: #d35400;
-  color: #fff;
+  color: #fafafa;
   animation: swing 2s infinite ease-in-out;
 }
 @keyframes swing {
@@ -341,7 +341,7 @@
 }
 /* ---------------Boton color ciclico */
 .btn20 {
-  background: #fff;
+  background: #fafafa;
   color: #000;
   animation: colorCycle 4s infinite;
 }
@@ -385,7 +385,7 @@
 /* --------Boton Zoom In al pasar el cursor */
 .btn23 {
   background: red;
-  color: #fff;
+  color: #fafafa;
   transition: transform 0.3s ease;
 }
 .btn23:hover {
@@ -394,7 +394,7 @@
 /* --------Boton Zoom Out al pasar el curosr */
 .btn24 {
   background: #fd79a8;
-  color: #fff;
+  color: #fafafa;
   transition: transform 0.3s ease;
 }
 .btn24:hover {
@@ -403,7 +403,7 @@
 /* ----------Boton Flas intermitente */
 .btn25 {
   background: #d63031;
-  color: #fff;
+  color: #fafafa;
   animation: flash 1.5s linear infinite;
 }
 @keyframes flash {
@@ -450,7 +450,7 @@
 /* ------------Boton brillo desde la izquierda */
 .btn29 {
   background: #2d3436;
-  color: #fff;
+  color: #fafafa;
   position: relative;
   overflow: hidden;
 }
@@ -491,11 +491,40 @@
 .btn31:hover {
   transform: skewX(-15deg);
 }
+.container-carousel {
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.carousel-controls button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #f97316;
+  color: #fafafa;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+.carousel-controls button:hover {
+  background: #ea580c;
+}
 
 /* -----------Boton movimiento circular infinito */
 .btn32 {
   background: #00cec9;
-  color: #fff;
+  color: #fafafa;
   animation: circleMove 3s linear infinite;
 }
 @keyframes circleMove {

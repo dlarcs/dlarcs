@@ -46,6 +46,15 @@ $cssTime = filemtime('../portafolio/portfolio/portfolio.css'); // ejemplo: '../H
       <a href="https://chapitour.co" target="_blank">Ver página</a>
     </div>
   </div>
+  <div class="proyecto">
+    <div class="proyecto-img" style="background-image: url('../portafolio/portfolio/img/Promoflow.png');">
+    </div>
+    <div class="proyecto-info">
+      <h3>Promoflow.net</h3>
+      <p>Aplicación venta de productos:Desde artículos básicos para el día a día hasta productos listos para eventos</p>
+      <a href="https://promoflow.net/dot63/view/main/index.php" target="_blank">Ver página</a>
+    </div>
+  </div>
 
 </div>
 </section>
